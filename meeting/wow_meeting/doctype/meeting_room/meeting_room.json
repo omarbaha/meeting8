@@ -1,0 +1,117 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{title} {start_date}",
+ "creation": "2023-12-14 17:15:41.718097",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "start_date",
+  "start_time",
+  "description",
+  "users_section",
+  "moderator",
+  "participants",
+  "accessibility_section",
+  "company",
+  "room_code",
+  "room_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "label": "Start Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "users_section",
+   "fieldtype": "Section Break",
+   "label": "Users"
+  },
+  {
+   "fieldname": "moderator",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Moderator (email)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "participants",
+   "fieldtype": "Table",
+   "label": "Participants",
+   "options": "Meeting Participants"
+  },
+  {
+   "fieldname": "accessibility_section",
+   "fieldtype": "Section Break",
+   "label": "Accessibility"
+  },
+  {
+   "fieldname": "room_code",
+   "fieldtype": "Data",
+   "label": "Room Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "room_id",
+   "fieldtype": "Data",
+   "label": "Room ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-16 13:00:39.765439",
+ "modified_by": "Administrator",
+ "module": "WOW Meeting",
+ "name": "Meeting Room",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
